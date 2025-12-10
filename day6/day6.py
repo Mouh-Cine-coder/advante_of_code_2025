@@ -36,12 +36,6 @@ class Day6:
                 nums = []
                 
         return count
-    
-    # before_strip = len(num)
-    # num = num.strip()
-    # after_strip = len(num)
-    # if before_strip == after_strip:
-    #     # this means there was no digit in this 
             
                     
     def gather_numbers(self, raw_data):
@@ -77,10 +71,7 @@ class Day6:
                 group = []
             else:
                 group.append(int(el))
-        
-        # group.append(int(el))
-        
-            
+         
         return numbers
     
     def calculate_2(self, ops, nums):
@@ -89,7 +80,6 @@ class Day6:
         for group in nums:
             index_ops -= 1
             count += self.calculate(ops[index_ops], group)
-            # print(count)
         
         return count
                 
