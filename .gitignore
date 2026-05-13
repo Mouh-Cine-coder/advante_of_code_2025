@@ -1,2 +1,14 @@
+# Environment variables
+.env
+
+# Virtual environment
+.env/
+.env/
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
+
+# IDE-specific files (e.g., VS Code settings)
+.vscode/
+
