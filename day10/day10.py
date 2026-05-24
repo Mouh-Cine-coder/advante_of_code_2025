@@ -17,7 +17,6 @@ class Day10:
                 if state == target:
                     return 0
                 
-                
                 if pressed > len(state):
                     return 10000000000000
                     
@@ -29,7 +28,7 @@ class Day10:
                     for i in btn:
                         # just toggling
                         new_state[i] = '.' if new_state[i] == '#' else '#'
-                
+
                     result = 1 + solve("".join(new_state), pressed + 1)
                     best = min(result, best)
                 
@@ -39,7 +38,7 @@ class Day10:
         
         return ans
     
-                
+
 
     def get_data(self, file_path):
         try:
